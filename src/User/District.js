@@ -5,23 +5,18 @@ const District = () => {
   const [district, setDistrict] = useState("");
   const [showdistrict, setShowDistrict] = useState("");
 
-  const MyRef = useRef()
+
 
   const ClickButton = () => {
-    setShowDistrict(MyRef.current.value);
+    setShowDistrict(district);
   };
 
 
 
-  useLayoutEffect(() => {
-    setShowDistrict('Kollam')
-
-  },[district])
 
 
-  useEffect(() =>{
-    setShowDistrict('Kottayam')
-  },[])
+
+
 
 
 
@@ -34,7 +29,6 @@ const District = () => {
             <div className="col">
               <input
                 type="text"
-                ref={MyRef}
                 onChange={(event) => setDistrict(event.target.value)}
               />
             </div>

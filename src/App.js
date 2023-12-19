@@ -10,6 +10,8 @@ import Parent from "./User/Parent";
 import UseMemoExample from "./User/UseMemoExample";
 import UseReducerExample from "./User/UseReducerExample";
 import UserRegistration from "./User/UserRegistration";
+import Login from "./User/Login";
+import SalaryForm from "./Salary/SalaryForm";
 
 const App = () => {
   return (
@@ -25,7 +27,10 @@ const App = () => {
         <Route path="/UseMemoExample" element={<UseMemoExample />} />
         <Route path="/UseReducerExample" element={<UseReducerExample />} />
         <Route path="/UserRegistration" element={<UserRegistration/>} />
+        <Route path="/login" element={<Login/>} ></Route>
+        <Route path="/Salaryform" element={<SalaryForm/>} />
       </Routes>
+
     </div>
   );
 };
